@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桜咲-さくさく</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css" />
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel='stylesheet' />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.17/leaflet-maplibre-gl.js"></script>
+    <!-- plugin -->
+    <link rel="stylesheet" href="css/L.Icon.Pulse.css" />
+    <script src="js/L.Icon.Pulse.js"></script>
+<!-- plugin -->
+
+    <style>
+      #map { height: 100vh; width: 100vw;}
+    </style>
+  </head>
+
+  <body>
+    <div id="map">
+      <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+    </div>
+    <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors ©MIERUNE</a></p>
+    <script>
+      const key = 'q5Un5baIhoFxRE5CXTpD';
+      const map = L.map('map').setView([34.6011566, 135.8296303], 16);
+      const gl = L.maplibreGL({
+        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        style: `https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=${key}`
+      }).addTo(map);
+ 
+// 位置情報
+var marker;
+map.on("locationfound", function(location) {
+    if (!marker){
+        var pulsingIcon = L.icon.pulse({
+            iconSize:[20,20]
+           ,color:'#57c6fd'
+           ,fillColor:'#57c6fd'
+           ,heartbeat: 2
+        });
+        L.marker(location.latlng, {icon:pulsingIcon}).addTo(map);
+    }
+});
+ 
+map.on('locationerror', function(e) {
+    alert('現在地が取得できませんでした。');
+});
+ 
+map.locate({
+    watch: false,
+    locate: true,
+    setView: true,
+    enableHighAccuracy: true
+});
+
+// マーカー
+L//マウスクリックで緯度と経度の取得とポイント設置
+function onMapClick(e) {
+
+//マーカーの指定があれば消す
+if (marker){
+    map.removeLayer(marker);
+}
+
+//マーカーを配置(その時、markerに代入)
+marker = L.marker(e.latlng).addTo(map);
+
+}
+map.on('click', onMapClick);
+
+    </script>
+
+  </body>
+</html>
