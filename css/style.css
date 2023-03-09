@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+body {
+  font-size: 1.6rem;
+  color: #3d3d3d;
+  padding: 0;
+    margin: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+ul,
+li {
+  list-style: none;
+}
+h2{
+  text-align: center;
+  font-size: 1.9rem;
+}
+p{
+  font-size: 1.7rem;
+}
+
+.fas{
+  font-size: 1.6rem;
+}
+
+.wrap {
+  position: relative;
+}
+
+/* ヘッダー */
+.header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  background-color: #ffe0e0;
+  position: relative;
+}
+
+.header h1 {
+  text-align: right;
+  font-size: 1.7rem;
+  padding-top: 12px;
+  padding-right: 10px;
+}
+
+/* main*/
+main {
+  width: 100%;
+  background: #fff8f8;
+  flex: 1;
+  z-index: 10;
+  
+}
+
+/* contents*/
+.contents{
+  min-height: calc(100vh - 82px);
+  padding: 3em 1.5em;
+}
+
+.contents h2{padding: 0 0 1.5em;}
+
+.contents p{padding: 1em 0;}
+
+
+.list li{padding: 0.5em 0;
+  display: list-item;
+  margin-left: 24px;
+  list-style: disc;;
+}
+
+/* sakuradeta*/
+.sakuradeta{padding: 0 1.2em;}
+span{font-size: 1.3rem;}
+#output p{padding: 0 0 1.7em;}
+
+/* map*/
+#map {
+  height: calc(100% - 50px); width: 100%; position: absolute !important; 
+}
+
+.map {
+  z-index: 10;
+}
+
+.leaflet-popup-content h3{font-size: 1.3rem;}
+.leaflet-popup-content p{font-size: 1.2rem;}
+
+
+
+/* footer*/
+footer {
+  z-index: 20;
+  width: 100%;
+  height: 30px;
+  margin-top: auto;
+  background: #fff8f8;
+}
+footer p {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 250%;
+  color: #F4729A;
+}
+
+/*--ハンバーガーメニュー*/
+/* ナビゲーション */
+.nav {
+  position: fixed;
+  left: -250px; 
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  padding-top: 15px;
+  background-color: #fde5e5;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  z-index: 40;
+  overflow-y: auto;
+}
+
+.navTitle {
+  float: right;
+  padding: 0 10px 10px 0;
+}
+
+.navList {
+  clear: both;
+  text-align: left;
+  padding: 0 1.5rem 0;
+}
+
+.nav li a {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menuBox1 {
+  margin: 0 0 4rem;
+  border-top: 1px solid #fff;
+}
+
+.menuBox1 li {
+  margin: 1rem 0 1rem;
+  padding-top: 10px;
+}
+
+.menuBox2 li {
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+/* ハンバーガーボタン(三本線の実装) */
+.menuBtn {
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  z-index: 50;
+}
+.menuLine {
+  position: absolute; 
+  left: 8px;
+  width: 30px;
+  height: 2px;
+  background-color: #111;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.menuLine_1 {
+  top: 14px;
+}
+.menuLine_2 {
+  top: 24px;
+}
+.menuLine_3 {
+  top: 34px;
+}
+/* End ハンバーガーボタン(三本線の実装) */
+
+/*ハンバーガーメニュをクリックした後に現れる半透明の背景*/
+.black-bg {
+  display: block;
+  position: fixed;
+  z-index: 30;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden; /* 非表示 */
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+/* ハンバーガーボタンをクリックした際の動き */
+/* ナビゲーションが現れる */
+.nav-open .nav {
+  left: 0;
+}
+
+/* 半透明の背景を表示させます。 */
+.nav-open .black-bg {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+/* 三本線のハンバーガーを、バッテンにします */
+.nav-open .menuLine_1 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 25px;
+}
+.nav-open .menuLine_2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .menuLine_3 {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 25px;
+}
+/* End ハンバーガーボタンをクリックした際の動き */
