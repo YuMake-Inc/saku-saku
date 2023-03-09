@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>桜咲-さくさく</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css" />
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.17/leaflet-maplibre-gl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/leaflet-omnivore.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header class="header">
+        <h1>
+          <a href="index.html"> 桜咲 </a>
+        </h1>
+
+        <!-- ナビゲーション -->
+        <nav class="nav">
+          <span class="navTitle"><a href="index.html">桜咲 -さくさく-</a></span>
+          <ul class="navList menuBox1">
+            <li>
+              <a href="#">オプション</a>
+            </li>
+            <li>
+              <a href="#"> オプション </a>
+            </li>
+          </ul>
+          <ul class="navList menuBox2">
+            <li>
+              <a href="about.html"> 桜咲について </a>
+            </li>
+            <li>
+              <a href="license.html"> ライセンス </a>
+            </li>
+            <li>
+              <a href="open-license.html"> オープンソースライセンス </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ハンバーガーボタン -->
+        <div class="menuBtn" id="menujs">
+          <span class="menuLine menuLine_1"></span>
+          <span class="menuLine menuLine_2"></span>
+          <span class="menuLine menuLine_3"></span>
+        </div>
+
+        <!-- ハンバーガーメニュをクリックした後に現れる半透明の背景-->
+        <div class="black-bg" id="black-bg"></div>
+      </header>
+      <!-- End header -->
+
+      <!-- main -->
+      <main>
+        <div class="contents">
+        <h2>オープンソースライセンス</h2>
+        <p>このサイトは以下のオープンソースライブラリを使用しております。</p>
+        <ul class="list">
+          <li>leafletjs.com</li>
+          <li>maptiler.jp</li>
+          <li>fontawesome.com</li>
+          <li>jquery.com</li>
+          <li>Leaflet.EasyButton</li>
+        </ul>
+      </div>
+    </main>
+      <!-- End main -->
+
+      <!-- footer -->
+      <footer>
+        <p>&copy; コピー</p>
+      </footer>
+      <!-- End footer -->
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
