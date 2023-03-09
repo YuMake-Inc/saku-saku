@@ -20,18 +20,22 @@ img {
   width: 100%;
   vertical-align: bottom;
 }
+
 a {
   text-decoration: none;
   color: #3d3d3d;
 }
+
 ul,
 li {
   list-style: none;
 }
+
 h2{
   text-align: center;
   font-size: 1.9rem;
 }
+
 p{
   font-size: 1.7rem;
 }
@@ -65,7 +69,7 @@ p{
 /* main*/
 main {
   width: 100%;
-  background: #fff8f8;
+  background: #fffcfc;
   flex: 1;
   z-index: 10;
   
@@ -90,7 +94,9 @@ main {
 
 /* sakuradeta*/
 .sakuradeta{padding: 0 1.2em;}
+
 span{font-size: 1.3rem;}
+
 #output p{padding: 0 0 1.7em;}
 
 /* map*/
@@ -104,8 +110,6 @@ span{font-size: 1.3rem;}
 
 .leaflet-popup-content h3{font-size: 1.3rem;}
 .leaflet-popup-content p{font-size: 1.2rem;}
-
-
 
 /* footer*/
 footer {
@@ -188,12 +192,15 @@ footer p {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
+
 .menuLine_1 {
   top: 14px;
 }
+
 .menuLine_2 {
   top: 24px;
 }
+
 .menuLine_3 {
   top: 34px;
 }
@@ -234,10 +241,12 @@ footer p {
   transform: rotate(45deg);
   top: 25px;
 }
+
 .nav-open .menuLine_2 {
   width: 0;
   left: 50%;
 }
+
 .nav-open .menuLine_3 {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
