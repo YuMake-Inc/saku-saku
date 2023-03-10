@@ -1,5 +1,5 @@
 var key = "q5Un5baIhoFxRE5CXTpD";
-var map = L.map("map", { center: [34.60438909041995, 135.83959579467776], zoom: 14 });
+var map = L.map("map", { center: [34.60438909041995, 135.83959579467776], zoom: 13 });
 
 var gl = L.maplibreGL({
   attribution:
@@ -12,9 +12,11 @@ var gl = L.maplibreGL({
 var sakuraIcon = L.icon({
 	iconUrl:'./icon/sakura.png',
 	iconSize:[33,55],
-	iconAnchor:[12,41],
+	iconAnchor:[12,55],
 	popupAnchor:[2,-40]
 	});
+	
+	map.panTo(new L.LatLng(34.60438909041995, 135.83959579467776));
 
   var csv0 = omnivore.csv('https://rawcdn.githack.com/YuMake-Inc/saku-saku/main/csvdata/data.csv?token=GHSAT0AAAAAAB7NR7OH4HUBMW73OOJZBTU6ZALF7VA',
   {latfield:'lat',lonfield:'lng',delimiter:','},
