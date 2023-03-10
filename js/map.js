@@ -11,7 +11,7 @@ var gl = L.maplibreGL({
 // sakuraマーカー
 var sakuraIcon = L.icon({
 	iconUrl:'./icon/sakura.png',
-	iconSize:[33,50],
+	iconSize:[33,55],
 	iconAnchor:[15,41],
 	popupAnchor:[2,-40]
 	});
