@@ -2,7 +2,7 @@ window.onload =function(){
     //出力場所を探す
     let output =document.getElementById("output");
     //CSVの指定
-    getCsv('https://rawcdn.githack.com/YuMake-Inc/saku-saku/main/csvdata/data.csv?token=GHSAT0AAAAAAB7NR7OH7YLQNZHPWOF7R6XIZAJ5Q3A');
+    getCsv('https://rawcdn.githack.com/YuMake-Inc/saku-saku/main/csvdata/data.csv?token=GHSAT0AAAAAAB7NR7OHCKXNUCQCVLIRQNS4ZALDV3A');
             
     //CSVの取り込み
     function getCsv(data){

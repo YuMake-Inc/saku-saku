@@ -16,7 +16,7 @@ var sakuraIcon = L.icon({
 	popupAnchor:[2,-40]
 	});
 
-  var csv0 = omnivore.csv('https://rawcdn.githack.com/YuMake-Inc/saku-saku/main/csvdata/data.csv?token=GHSAT0AAAAAAB7NR7OH7YLQNZHPWOF7R6XIZAJ5Q3A',
+  var csv0 = omnivore.csv('https://rawcdn.githack.com/YuMake-Inc/saku-saku/main/csvdata/data.csv?token=GHSAT0AAAAAAB7NR7OHCKXNUCQCVLIRQNS4ZALDV3A',
   {latfield:'lat',lonfield:'lng',delimiter:','},
   L.geoJson(null,
   {pointToLayer:function(feature,latlng)
