@@ -47,10 +47,8 @@ window.onload =function(){
         let csvGetId = params.get('id');
         
         let insert ="";
-        alert(csvGetId);
 
         for(let i = 1;i < dataList.length;i++){
-            alert(dataList[i][0]);
 
             if(dataList[i][0].toString() == csvGetId.toString()){
                 let imgURL = dataList[i][1].toString();
