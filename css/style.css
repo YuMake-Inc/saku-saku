@@ -7,7 +7,12 @@
 html {
   font-size: 62.5%;
   height: 100%;
-  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
 }
 body {
   font-size: 1.6rem;
@@ -101,7 +106,9 @@ main {
 
 /* map*/
 #map {
-  height: calc(100% - 50px); width: 100%; position: absolute !important; 
+  height: calc(100% - 50px); 
+  width: 100%; 
+  position: absolute !important; 
 }
 
 .map {
