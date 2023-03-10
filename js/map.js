@@ -1,5 +1,5 @@
 var key = "q5Un5baIhoFxRE5CXTpD";
-var map = L.map("map", { center: [34.60438909041995, 135.83959579467776], zoom: 13 });
+var map = L.map("map", { center: [34.60438909041995, 135.83959579467776], zoom: 14 });
 
 var gl = L.maplibreGL({
   attribution:
