@@ -13,7 +13,7 @@ var sakuraIcon = L.icon({
 	iconUrl:'./icon/sakura.png',
 	iconSize:[33,55],
 	iconAnchor:[12,55],
-	popupAnchor:[3,-50]
+	popupAnchor:[4,-50]
 	});
 	
 	map.panTo(new L.LatLng(34.60438909041995, 135.83959579467776));
