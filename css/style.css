@@ -158,6 +158,8 @@ footer p {
   clear: both;
   text-align: left;
   padding: 0 1.5rem 0;
+  display: flex; 
+  flex-flow: column; 
 }
 
 .nav li a {
@@ -166,17 +168,21 @@ footer p {
 }
 
 .menuBox1 {
-  margin: 0 0 4rem;
   border-top: 1px solid #fff;
+  min-height: 68vh;
 }
 
 .menuBox1 li {
-  margin: 1rem 0 1rem;
+  margin: 1rem 0 1.5rem;
   padding-top: 10px;
 }
 
+.menuBox2 {
+  flex: 1;
+}
+
 .menuBox2 li {
-  margin: 1rem 0 2rem;
+  margin: 1.5rem 0 1rem;
   font-size: 1.5rem;
 }
 
