@@ -52,7 +52,10 @@ h2{
 }
 
 p{
-  font-size: 1.7rem;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-ideograph;
+
 }
 
 .fas{
