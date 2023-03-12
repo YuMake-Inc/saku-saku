@@ -24,8 +24,10 @@ var sakuraIcon = L.icon({
   {pointToLayer:function(feature,latlng)
   {return L.marker(latlng,{icon:sakuraIcon});},
   onEachFeature:function(feature,layer)
-  {layer.bindPopup("<h3>"+feature.properties['title']+"</h3>"+feature.properties['season']+"<p><img src=\"" + feature.properties['image'].substring(feature.properties['image'].indexOf("(") + 1, feature.properties['image'].indexOf(")")) + "\">"+ "<a href='" + feature.properties['url'] + "'>詳細はこちら</a>"+"</p>");}
+  {layer.bindPopup("<img src=\"" + feature.properties['image'].substring(feature.properties['image'].indexOf("(") + 1, feature.properties['image'].indexOf(")")) + "\">" + "<h3>"+feature.properties['title']+"</h3>"+feature.properties['season']+"<p><a href='" + feature.properties['url'] + "'>詳細はこちら</a>"+"</p>");}
   })).on( 'click', function(e) { clickEvt(e); });
+
+
 map.addLayer(csv0);
 
 // 現在地表示ボタン
