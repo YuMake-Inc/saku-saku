@@ -116,7 +116,7 @@ main {
 }
 
 .leaflet-popup-content h3{font-size: 1.3rem;}
-.leaflet-popup-content p{font-size: 1.2rem;}
+.leaflet-popup-content p{font-size: 1.2rem; text-align: right;}
 
 /* footer*/
 footer {
