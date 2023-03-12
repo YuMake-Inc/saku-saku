@@ -63,7 +63,7 @@ window.onload =function(){
                 insert +='<div class="sakuradeta">';
                 insert +='<span>' + " 桜が見れる場所の名前 " +'</span>';
                 insert +='<p>' + dataList[i][2] +'</p>';
-                insert +='<span>' + " 概要 " +'</span>';
+                insert +='<span>' + " 桜の概要 " +'</span>';
                 insert +='<p>' + dataList[i][5] +'</p>';
                 insert +='<span>' + " 例年の見頃 " +'</span>';
                 insert +='<p>' + dataList[i][6] +'</p>';
