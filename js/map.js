@@ -18,7 +18,7 @@ var sakuraIcon = L.icon({
 	
 	map.panTo(new L.LatLng(34.60438909041995, 135.83959579467776));
 
-  var csv0 = omnivore.csv('https://rawcdn.githack.com/YuMake-Inc/saku-saku/main/csvdata/data.csv?token=GHSAT0AAAAAAB7NR7OH4HUBMW73OOJZBTU6ZALF7VA',
+  var csv0 = omnivore.csv('https://rawcdn.githack.com/YuMake-Inc/saku-saku/main/csvdata/data.csv?token=GHSAT0AAAAAAB7NR7OGT5WHJPH7OX27THPSZANDWEA',
   {latfield:'lat',lonfield:'lng',delimiter:','},
   L.geoJson(null,
   {pointToLayer:function(feature,latlng)
