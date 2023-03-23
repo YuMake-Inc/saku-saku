@@ -220,8 +220,8 @@ footer p {
   width: 30px;
   height: 2px;
   background-color: #111;
-  -webkit-transition: all 0.6s;
   transition: all 0.6s;
+  -webkit-transition: all 0.6s;
 }
 
 .menuLine_1 {
@@ -249,8 +249,9 @@ footer p {
   background-color: #000;
   opacity: 0;
   visibility: hidden; /* 非表示 */
-  -webkit-transition: all 0.6s;
   transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition-delay: 0.25s;
   cursor: pointer;
 }
 
