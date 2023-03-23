@@ -249,8 +249,8 @@ footer p {
   background-color: #000;
   opacity: 0;
   visibility: hidden; /* 非表示 */
-  transition: all 0.6s;
-  -webkit-transition: -webkit-transform all 0.6s;
+  /* transition: all 0.6s;
+  -webkit-transition: all 0.6s ; */
   cursor: pointer;
 }
 
